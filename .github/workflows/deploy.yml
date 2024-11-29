@@ -20,23 +20,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20' # Укажите вашу версию Node.js
+          cache: 'yarn'
 
       # Шаг 3. Установка зависимостей
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       # Шаг 4. Сборка Docusaurus
       - name: Build Docusaurus
-        run: npm run build
+        run: yarn build
 
       - name: Serving Build
-        run: npm run serve
+        run: yarn serve
 
       - name: Generate PDF
-        run: npm run generate:pdf
+        run: yarn generate:pdf
 
       - name: Stop Serve Process
-        run: pkill -f 'npm run serve'
+        run: pkill -f 'yarn serve'
 
       # Шаг 8. Настройка SSH
       - name: Set up SSH
