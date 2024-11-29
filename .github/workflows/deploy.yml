@@ -55,7 +55,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Add server key to known_hosts
+        run: echo "${{ secrets.SERVER_PUBLIC_KEY }}" >> ~/.ssh/known_hosts
+
       # Шаг 9. Копирование файлов на сервер
       - name: Deploy to Server
         run: |
-          rsync -avz --delete ./build/ riodig@89.169.138.205:/var/www/html/public/
+          rsync -vrm --delete -e "ssh -o StrictHostKeyChecking=yes" ./build/ ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/public/
