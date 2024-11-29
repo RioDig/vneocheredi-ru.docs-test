@@ -1,0 +1,50 @@
+name: Deploy Docusaurus to Server
+
+on:
+  push:
+    branches:
+      - master # Запуск на коммитах в main
+
+jobs:
+  deploy:
+    name: Build and Deploy to Server
+    runs-on: ubuntu-latest
+
+    steps:
+      # Шаг 1. Клонирование репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Шаг 2. Установка Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Укажите вашу версию Node.js
+
+      # Шаг 3. Установка зависимостей
+      - name: Install dependencies
+        run: npm install
+
+      # Шаг 4. Сборка Docusaurus
+      - name: Build Docusaurus
+        run: npm run build
+
+      - name: Serving Build
+        run: npm run serve
+
+      - name: Generate PDF
+        run: npm run generate:pdf
+
+      - name: Stop Serve Process
+        run: pkill -f 'npm run serve'
+
+      # Шаг 8. Настройка SSH
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Шаг 9. Копирование файлов на сервер
+      - name: Deploy to Server
+        run: |
+          rsync -avz --delete ./build/ riodig@89.169.138.205:/var/www/html/public/
