@@ -74,8 +74,14 @@ jobs:
 
       - name: Check
         run: |
-          echo $PUPPETEER_CACHE_DIR
-          ls -l ~/.cache/
+          $PUPPETEER_CACHE_DIR
+          ls -la ~/.cache/
+          ls -la /usr/bin
+
+      - name: Set Puppeteer Executable Path
+        run: |
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
+
 
       - name: Generate PDF
         run: yarn generate:pdf
