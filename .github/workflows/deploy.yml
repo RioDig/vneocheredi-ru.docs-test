@@ -75,8 +75,7 @@ jobs:
       - name: Check
         run: |
           echo $PUPPETEER_CACHE_DIR
-          ls -l ~/.cache/puppeteer
-          ls -l ~/.cache/puppeteer/chrome/linux-121.0.6167.85/chrome-linux64/chrome
+          ls -l ~/.cache/
 
       - name: Generate PDF
         run: yarn generate:pdf
