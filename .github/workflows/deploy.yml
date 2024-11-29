@@ -22,11 +22,13 @@ jobs:
           node-version: '20' # Укажите вашу версию Node.js
           cache: 'yarn'
 
-      - name: Cache Node modules  # Кэширование Node модулей для ускорения сборки
-        uses: actions/cache@v2
+      - uses: actions/cache@v4
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          path: ./node_modules
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       # Шаг 3. Установка зависимостей
       - name: Install dependencies
