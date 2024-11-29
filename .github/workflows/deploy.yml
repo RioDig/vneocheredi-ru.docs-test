@@ -15,28 +15,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Шаг 2. Установка Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20' # Укажите вашу версию Node.js
-          cache: 'yarn'
-
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            node-modules-
-
-      # Шаг 3. Установка зависимостей
-      - name: Install dependencies
-        run: yarn install
-
-      # Шаг 4. Сборка Docusaurus
-      - name: Build Docusaurus
-        run: yarn build
+#      # Шаг 2. Установка Node.js
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '20' # Укажите вашу версию Node.js
+#          cache: 'yarn'
+#
+#      - name: Cache node_modules
+#        uses: actions/cache@v3
+#        with:
+#          path: node_modules
+#          key: node-modules-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            node-modules-
+#
+#      # Шаг 3. Установка зависимостей
+#      - name: Install dependencies
+#        run: yarn install
+#
+#      # Шаг 4. Сборка Docusaurus
+#      - name: Build Docusaurus
+#        run: yarn build
 
 #      - name: Serving Build
 #        run: |
