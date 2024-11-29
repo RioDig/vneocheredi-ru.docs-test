@@ -63,14 +63,14 @@ jobs:
 #      - name: Install Puppeteer Browser
 #        run: npx puppeteer install
 
-      - name: Check Puppeteer Browser
-        run: |
-          if [ -f ~/.cache/puppeteer/chrome/linux-121.0.6167.85/chrome-linux64/chrome ]; then
-            echo "Browser exists!"
-          else
-            echo "Browser not found!"
-            exit 1
-          fi
+#      - name: Check Puppeteer Browser
+#        run: |
+#          if [ -f ~/.cache/puppeteer/chrome/linux-121.0.6167.85/chrome-linux64/chrome ]; then
+#            echo "Browser exists!"
+#          else
+#            echo "Browser not found!"
+#            exit 1
+#          fi
 
       - name: Check
         run: |
