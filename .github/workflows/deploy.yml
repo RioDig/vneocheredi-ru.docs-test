@@ -37,7 +37,7 @@ jobs:
 #      # Шаг 4. Сборка Docusaurus
 #      - name: Build Docusaurus
 #        run: yarn build
-#
+
 #      - name: Serving Build
 #        run: |
 #          yarn serve > serve.log 2>&1 &
