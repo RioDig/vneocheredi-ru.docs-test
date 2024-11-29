@@ -61,4 +61,4 @@ jobs:
       # Шаг 9. Копирование файлов на сервер
       - name: Deploy to Server
         run: |
-          rsync -vrm --delete -e "ssh -o StrictHostKeyChecking=yes" ./build/ ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/public/
+          rsync -vrm --delete -e "ssh -o StrictHostKeyChecking=no" ./build/ ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/public/
