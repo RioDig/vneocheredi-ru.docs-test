@@ -50,6 +50,10 @@ jobs:
       - name: Generate PDF
         run: yarn generate:pdf
 
+      - name: Check
+        run: |
+          ls -la 
+
       - name: Stop Serve Process
         run: kill $(cat serve.pid)
 
