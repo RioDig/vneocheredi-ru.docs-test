@@ -50,9 +50,9 @@ jobs:
       - name: Generate PDF
         run: yarn generate:pdf
 
-      - name: Check
+      - name: Move PDF to Build directory
         run: |
-          ls -la 
+          mv -f ./static/images/test.pdf ./build/images/test.pdf
 
       - name: Stop Serve Process
         run: kill $(cat serve.pid)
