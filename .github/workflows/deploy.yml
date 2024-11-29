@@ -38,16 +38,16 @@ jobs:
       - name: Build Docusaurus
         run: yarn build
 
-#      - name: Serving Build
-#        run: |
-#          yarn serve > serve.log 2>&1 &
-#          echo $! > serve.pid
-#
-#      - name: Generate PDF
-#        run: yarn generate:pdf
-#
-#      - name: Stop Serve Process
-#        run: kill $(cat serve.pid)
+      - name: Serving Build
+        run: |
+          yarn serve > serve.log 2>&1 &
+          echo $! > serve.pid
+
+      - name: Generate PDF
+        run: yarn generate:pdf
+
+      - name: Stop Serve Process
+        run: kill $(cat serve.pid)
 
       # Шаг 8. Настройка SSH
       - name: Set up SSH
