@@ -52,7 +52,7 @@ jobs:
 
       - name: Move PDF to Build directory
         run: |
-          mv -f ./static/images/test.pdf ./build/images/test.pdf
+          mv -f ./static/images/vneocheredi_user_guide3.pdf ./build/images/vneocheredi_user_guide3.pdf
 
       - name: Stop Serve Process
         run: kill $(cat serve.pid)
