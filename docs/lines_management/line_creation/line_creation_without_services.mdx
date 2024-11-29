@@ -1,0 +1,25 @@
+---
+sidebar_position: 6.0102
+---
+
+import ImageContainer from "../../../src/components/ImageContainer";
+import {Add} from "@mui/icons-material";
+
+# Создание очереди без услуг {#line_creation_without_services}
+
+Системой предусмотрено создание очереди без указания услуг. Это может применяться в двух случаях:
+-   Если оказываемая услуга всего одна с определенным временем обслуживания.
+-   Если создание услуг планируется позже.
+
+Чтобы создать очередь без услуг:
+1.  На главной странице откройте выбранное место и перейдите в «Очереди».
+    <ImageContainer src={"/images/lines_management/lines_page.png"} description={"Интерфейс страницы «Очереди»"}/>
+2.  Нажмите «<Add/>».
+    <ImageContainer src={"/images/lines_management/line_create.png"} description={"Группа «Параметры» в настройках очереди"}/>
+3.  Раскройте блок настроек «Параметры».
+4.  Введите «Название».
+5.  Раскройте блок настроек «Услуги».
+    <ImageContainer src={"/images/lines_management/line_create_services.png"} description={"Группа «Услуги» в настройках очереди"}/>
+6.  Выберите «Нет» в списке «Тип отображения услуг».
+7.  Нажмите «Сохранить».
+    :step_result: откроется страница «Очереди» с новой очередью.

@@ -1,0 +1,107 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  //--ifm-color-primary: #2e8555;
+  //--ifm-color-primary-dark: #29784c;
+  //--ifm-color-primary-darker: #277148;
+  //--ifm-color-primary-darkest: #205d3b;
+  //--ifm-color-primary-light: #33925d;
+  //--ifm-color-primary-lighter: #359962;
+  //--ifm-color-primary-lightest: #3cad6e;
+
+  --ifm-color-primary: #db214d;
+  --ifm-color-primary-dark: #c51e45;
+  --ifm-color-primary-darker: #ba1c41;
+  --ifm-color-primary-darkest: #991736;
+  --ifm-color-primary-light: #e1355d;
+  --ifm-color-primary-lighter: #e24066;
+  --ifm-color-primary-lightest: #e76080;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-leading-desktop: 0.75;
+  --ifm-heading-vertical-rhythm-bottom: 2 !important;
+  --ifm-list-paragraph-margin: 0;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__title {
+  display: flex;
+  flex-direction: column;
+  & > span {
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+article > div {
+  //border: 3px dashed var(--ifm-color-primary);
+
+  /* Выравнивание иконок в тексте */
+  svg {
+    vertical-align: text-bottom;
+  }
+
+  /* Стили маркеров списков */
+  ul {
+    list-style-type: disc; /* Первый уровень (маркированный) — заполненный круг */
+    ul {
+      list-style-type: circle; /* Второй уровень (маркированный) — пустой круг */
+    }
+  }
+  ol {
+    list-style-type: decimal; /* Первый уровень (нумерованный) — цифры */
+    ul {
+      list-style-type: disc; /* Второй уровень (маркированный) — заполненный круг */
+    }
+    ul ul {
+      list-style-type: circle; /* Третий уровень (маркированный) — пустой круг */
+    }
+  }
+  ol ol {
+    list-style-type: lower-alpha; /* Второй уровень (нумерованный) — буквы */
+    ul {
+      list-style-type: disc; /* Третий уровень (маркированный) — заполненный круг */
+    }
+    ul ul {
+      list-style-type: circle; /* Четвертый уровень (маркированный) — пустой круг НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ */
+    }
+  }
+  ol ol ol {
+    list-style-type: lower-roman; /* Третий уровень (нумерованный) — римские числа */
+    ul {
+      list-style-type: disc; /* Четвертый уровень (маркированный) — заполненный круг НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ */
+    }
+    ul ul {
+      list-style-type: square; /* Пятый уровень (маркированный) — пустой круг  НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ */
+    }
+  }
+}
+
+//[id]:before {
+//  content: "";
+//  display: block;
+//  height: 80px; /* Высота хедера */
+//  margin-top: -80px; /* Отрицательный отступ, чтобы компенсировать сдвиг */
+//
+//}
+
+li a[id] {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+}

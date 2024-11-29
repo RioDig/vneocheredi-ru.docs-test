@@ -1,0 +1,68 @@
+{
+  "name": "vne-ocheredi-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "build:debug": "set DEBUG=search-local:* && docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "generate:pdf": "docs-to-pdf --initialDocURLs=\"http://localhost:3000/docs/intro\" --contentSelector=\"article\" --paginationSelector=\"a.pagination-nav__link.pagination-nav__link--next\" --excludeSelectors=\".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page\" --outputPDFFilename=\"static/images/vneocheredi_user_guide3.pdf\" --cssStyle=\"svg { width: 24px; height: 24px; } h1.toc-header { visibility: hidden; } h1.toc-header:before { content: 'Содержание:' !important; visibility: visible;} \" --coverTitle=\"Руководство пользователя ВнеОчереди\" --coverSub=\"Версия 2410.1\" --headerTemplate=\"<div style='font-size:12px; color: #808080; margin-left: auto; margin-right: 32px;'>Руководство пользователя ВнеОчереди</div>\" --footerTemplate=\"<div style='font-size:12px; color: #808080; margin-left: auto; margin-right: 32px;'>Страница <span class='pageNumber'></span> из <span class='totalPages'></span></div>\" --puppeteerArgs=\"--no-sandbox\" --restrictPaths --baseUrl=\"#\""
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.6.1",
+    "@docusaurus/faster": "3.6.1",
+    "@docusaurus/preset-classic": "3.6.1",
+    "@easyops-cn/docusaurus-search-local": "^0.45.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mdx-js/mdx": "^3.1.0",
+    "@mdx-js/react": "^3.0.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
+    "clsx": "^2.0.0",
+    "docs-to-pdf": "^0.6.2",
+    "docusaurus-plugin-openapi-docs": "^4.1.0",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "docusaurus-theme-openapi-docs": "^4.1.0",
+    "faster": "^3.5.1",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rehype": "^13.0.2",
+    "remark": "^15.0.1",
+    "sass": "^1.79.4",
+    "unist-builder": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/tsconfig": "3.6.1",
+    "@docusaurus/types": "3.6.1",
+    "@types/webpack-bundle-analyzer": "^4.7.0",
+    "typescript": "~5.5.2",
+    "webpack-bundle-analyzer": "^4.10.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

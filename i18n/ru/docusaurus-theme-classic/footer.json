@@ -1,0 +1,26 @@
+{
+  "link.title.Руководство пользователя": {
+    "message": "Руководство пользователя",
+    "description": "The title of the footer links column with title=Руководство пользователя in the footer"
+  },
+  "link.title.Другое": {
+    "message": "Другое",
+    "description": "The title of the footer links column with title=Другое in the footer"
+  },
+  "link.item.label.Введение": {
+    "message": "Введение",
+    "description": "The label of footer link with label=Введение linking to /docs/intro"
+  },
+  "link.item.label.Список изменений": {
+    "message": "Список изменений",
+    "description": "The label of footer link with label=Список изменений linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/VneOcheredi/vneocheredi-ru.docs"
+  },
+  "copyright": {
+    "message": "© ООО «ВнеОчереди», 2023–2024",
+    "description": "The footer copyright"
+  }
+}

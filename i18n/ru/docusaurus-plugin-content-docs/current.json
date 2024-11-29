@@ -1,0 +1,94 @@
+{
+  "version.label": {
+    "message": "2410.1",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Знакомство с ВнеОчереди": {
+    "message": "Знакомство с ВнеОчереди",
+    "description": "The label for category Знакомство с ВнеОчереди in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Начало работы с ВнеОчереди": {
+    "message": "Начало работы с ВнеОчереди",
+    "description": "The label for category Начало работы с ВнеОчереди in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление учетными записями": {
+    "message": "Управление учетными записями",
+    "description": "The label for category Управление учетными записями in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление местами": {
+    "message": "Управление местами",
+    "description": "The label for category Управление местами in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление очередями": {
+    "message": "Управление очередями",
+    "description": "The label for category Управление очередями in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Создание очереди": {
+    "message": "Создание очереди",
+    "description": "The label for category Создание очереди in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Настройка очереди": {
+    "message": "Настройка очереди",
+    "description": "The label for category Настройка очереди in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление организациями": {
+    "message": "Управление организациями",
+    "description": "The label for category Управление организациями in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление точками обслуживания": {
+    "message": "Управление точками обслуживания",
+    "description": "The label for category Управление точками обслуживания in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Работа с точкой обслуживания и очередью": {
+    "message": "Работа с точкой обслуживания и очередью",
+    "description": "The label for category Работа с точкой обслуживания и очередью in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Виды мониторингов очереди и точек обслуживания": {
+    "message": "Виды мониторингов очереди и точек обслуживания",
+    "description": "The label for category Виды мониторингов очереди и точек обслуживания in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Включение технического перерыва": {
+    "message": "Включение технического перерыва",
+    "description": "The label for category Включение технического перерыва in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.График сотрудников и предварительная запись": {
+    "message": "График сотрудников и предварительная запись",
+    "description": "The label for category График сотрудников и предварительная запись in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление терминалами": {
+    "message": "Управление терминалами",
+    "description": "The label for category Управление терминалами in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление отчетами и выгрузка данных": {
+    "message": "Управление отчетами и выгрузка данных",
+    "description": "The label for category Управление отчетами и выгрузка данных in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Поиск и просмотр записей в журнале": {
+    "message": "Поиск и просмотр записей в журнале",
+    "description": "The label for category Поиск и просмотр записей в журнале in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Управление рекламными кампаниями и баннерами": {
+    "message": "Управление рекламными кампаниями и баннерами",
+    "description": "The label for category Управление рекламными кампаниями и баннерами in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Настройка шаблонов сообщений": {
+    "message": "Настройка шаблонов сообщений",
+    "description": "The label for category Настройка шаблонов сообщений in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Создание и редактирование переводов интерфейса": {
+    "message": "Создание и редактирование переводов интерфейса",
+    "description": "The label for category Создание и редактирование переводов интерфейса in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Справочная информация": {
+    "message": "Справочная информация",
+    "description": "The label for category Справочная информация in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Часто задаваемые вопросы": {
+    "message": "Часто задаваемые вопросы",
+    "description": "The label for category Часто задаваемые вопросы in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Инструкции ВнеОчереди": {
+    "message": "Инструкции ВнеОчереди",
+    "description": "The label for category Инструкции ВнеОчереди in sidebar tutorialSidebar"
+  }
+}

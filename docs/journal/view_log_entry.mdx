@@ -1,0 +1,40 @@
+---
+sidebar_position: 13.02
+---
+
+import {Avatar} from "@mui/material";
+import ImageContainer from "../../src/components/ImageContainer";
+import {
+    Code, ContactMail,
+    Email, Event,
+    Person, Phone, PhoneAndroid, Settings, ShoppingBasket, SupervisorAccount, Tv, AddCircle
+} from "@mui/icons-material";
+
+# Просмотр записи в журнале {#view_log_entry}
+
+Каждая запись журнала содержит информацию о клиенте, системную информацию о записи, аудиозаписи, историю действий над позицией.
+
+Воспользуйтесь поиском записи, подробнее см. в разделе [Поиск записи в журнале](getting_log.mdx).
+
+<ImageContainer src={"/images/journal/journal_entry.png"} description={"Запись в журнале"}/>
+
+Запись в журнале содержит следующую информацию:
+-   Тип записи:
+    -   <div style={{display: "flex", alignItems: 'center', gap: '0 8px'}}><Avatar><Event/></Avatar> — Предварительная запись, бронирование.</div>
+    -   <div style={{display: "flex", alignItems: 'center', gap: '0 8px'}}><Avatar><PhoneAndroid/></Avatar> — Запись из мобильного приложения.</div>
+    -   <div style={{display: "flex", alignItems: 'center', gap: '0 8px'}}><Avatar><Tv/></Avatar> — Запись с терминала или сотрудником очереди.</div>
+    -   <div style={{display: "flex", alignItems: 'center', gap: '0 8px'}}><Avatar><Settings/></Avatar> — Техническая услуга.</div>
+-   Идентификатор записи, располагается под иконкой типа записи. Пример на рисунке — 12949900.
+-   Название места и очереди, располагаются в верхней части записи.
+-   Информация о клиенте:
+    -   <Person/> — ФИО клиента.
+    -   <Phone/> — Номер телефона.
+    -   <Email/> — Электронная почта.
+    -   <Code/> — Идентификатор клиента.
+-   <ShoppingBasket/> — Выбранные услуги, если имеются.
+-   <SupervisorAccount/> — Количество \(человек, пакетов документов\).
+-   <ContactMail/> — Комментарий оператора.
+-   Аудиозаписи, если они были включены для очереди и точки обслуживания.
+    <ImageContainer src={"/images/journal/journal_recordings.png"} description={"Блок «Аудиозаписи» в журнале"}/>
+-   История действий позиции. При нажатии на «<AddCircle sx={{color: '#db214d'}}/>» откроется дополнительная информация действия.
+    <ImageContainer src={"/images/journal/journal_expanded_log.png"} description={"История действий позиции"}/>

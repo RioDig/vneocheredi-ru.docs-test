@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "ВнеОчереди",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Логотип ВнеОчереди",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Руководство пользователя": {
+    "message": "Руководство пользователя",
+    "description": "Navbar item with label Руководство пользователя"
+  },
+  "item.label.Список изменений": {
+    "message": "Список изменений",
+    "description": "Navbar item with label Список изменений"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
