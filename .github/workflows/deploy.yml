@@ -115,7 +115,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/riodig/vneocheredi-test
-            docker-compose up -d
+            echo ${{ secrets.YANDEX_REGISTRY_OAUTH }}|docker login --username oauth --password-stdin cr.yandex
+            sudo docker-compose up -d
           
 
 #      # Шаг 9. Копирование файлов на сервер
