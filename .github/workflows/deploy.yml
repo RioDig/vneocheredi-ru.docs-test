@@ -47,8 +47,8 @@ jobs:
         run: |
           echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
 
-      - name: Generate PDF
-        run: yarn generate:pdf
+#      - name: Generate PDF
+#        run: yarn generate:pdf
 
       - name: Move PDF to Build directory
         run: |
