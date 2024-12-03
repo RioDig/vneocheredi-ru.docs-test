@@ -105,7 +105,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "./docker-compose.yml"
-          target: "/root/vneocheredi-test/"
+          target: "/home/riodig/vneocheredi-test/"
 
       - name: Docker-compose up
         uses: appleboy/ssh-action@v1.0.3
