@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  docusaurus:
+    image: {{ .registryRepository }}/docusaurus-app:latest
+    container_name: docusaurus-app
+    restart: always
+    ports:
+      - "80:80"
