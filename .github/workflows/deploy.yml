@@ -114,8 +114,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /root/vneocheredi-test
-            docker compose up -d
+            cd /home/riodig/vneocheredi-test
+            docker-compose up -d
           
 
 #      # Шаг 9. Копирование файлов на сервер
